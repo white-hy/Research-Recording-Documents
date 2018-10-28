@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{li2006optimal}
+Kang Li, Xiaodong Wu, Danny~Z Chen, and Milan Sonka.
+\newblock Optimal surface segmentation in volumetric images-a graph-theoretic
+  approach.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  28(1):119--134, 2006.
+
+\bibitem{zhang2017deep}
+Yizhe Zhang, Lin Yang, Jianxu Chen, Maridel Fredericksen, David~P Hughes, and
+  Danny~Z Chen.
+\newblock Deep adversarial networks for biomedical image segmentation utilizing
+  unannotated images.
+\newblock In {\em International Conference on Medical Image Computing and
+  Computer-Assisted Intervention}, pages 408--416. Springer, 2017.
+
+\end{thebibliography}

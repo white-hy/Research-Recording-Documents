@@ -1,0 +1,107 @@
+\documentclass[8pt]{beamer}
+\usepackage{ctex}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{xcolor} 
+\usepackage{float}
+\usefonttheme[onlymath]{serif}
+\usetheme{Warsaw}
+%\usecolortheme{dolphin}
+\setbeamercovered{transparent}
+%%-------------------------------------------------
+\title{Weekly Reports}
+\author{冯浩哲}
+
+\begin{document}
+	\frame{\titlepage}
+		
+	%%-------------------------------------------------
+	
+	\section*{Outline}	
+
+\begin{frame}[fragile]
+\frametitle{Outline}
+\begin{itemize}  
+	
+\item  The main purpose and the tasks I have finished this week
+\vspace{.5cm} 
+\item  Some ideals I want to practice next week
+\vspace{.5cm} 
+\item  Some problems waiting for discussion
+\vspace{.5cm} 
+\end{itemize}
+\end{frame}
+
+\section*{The main purpose and the tasks I have finished this week}	
+\begin{frame}[fragile]
+\frametitle{The main purpose and The tasks I have finished this week}
+Our main purpose is to build a 3D segmentation network aiming to get a pixel-wise label
+of the lung node,and we want to expand suggest annotation technique to 3D space to reduce the burden of label.
+\\
+There are 2 tasks I have finished this week:\\
+\vspace{.3cm}
+\begin{itemize}
+	\item Reading the whole code of the 2nd winner in Kaggle's Data Science Bowl Competition 2017.\\
+	\vspace{.3cm}
+	The kaggle's competition is a competition about the lung cancer detection. It gives a branch of CT images of about 200 people as well as labels describing whether they will get cancer in the next year. The task is predict the morbidity of lung cancer in one year.\\
+	\vspace{.3cm}
+	The author try to use 3 ways to give his prediction: the nodule in CT images, the malignancy of lung nodule, and the strange or pathological tissue.He use 3D CNN and U-Net to find the lung nodule and pathological tissue,and use regression tree to give prediction.\\
+	\vspace{.3cm}
+	I read his code,and the preprocessing part is very useful.His net structure is also explicit,and we plan to use his code as a basic structure.
+
+	
+\end{itemize}
+\end{frame}	
+
+\begin{frame}[fragile]
+\frametitle{The tasks I have finished this week}
+\vspace{.3cm}
+\begin{itemize}
+\item Reading some papers about 3D biomedical image segmentation
+	\vspace{.3cm}
+	I have read 3 articles about 3D biomedical image segmentation,\cite{DBLP:journals/corr/ChenYZAC16},\cite{DBLP:journals/corr/ShrivastavaGG16} and \cite{DBLP:journals/corr/HuangLW16a}.\\
+	\vspace{.3cm}
+	The first article combines LSTM and U-Net to store and exploit the contexture in z dimensions, which leverage the spatial correlation along z-direction.\\
+	\vspace{.3cm}
+	The second article proposes a way to select examples using the loss function,which can be viewed as a way of suggest annotation.\\
+	\vspace{.3cm}
+	The third article proposes a new net structure: Densenet, which can reduce the number of parameters in 3D FCN, and I think it may help us deal with the training time problem.
+	\vspace{.3cm}
+\end{itemize}
+\end{frame}
+
+\section*{Some ideals I want to practice next week}	
+\begin{frame}[fragile]
+\frametitle{Some ideals I want to practice next week}
+Combine the code and the articles I have read this week, I want to practice some ideals next week, actually we have made some training data.Here are my ideals:
+\begin{itemize}
+\item Combine the kaggle's net structure and the features it exact with the Semantic Segmentation network.\\
+	\vspace{.3cm}
+	For short,the ideal is similiar to transferlearning.As we have a network structure which is proved to be a good nodule detector but only returns if a small cube have nodules or not, it is nature to think if we can expand it to a segmentation net.Then we can train the network partly, and the whole net is like a multi-task net.\\
+\end{itemize}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Some ideals I want to practice next week}
+
+\begin{itemize}
+\item Use Dropout to expand the suggest annotation to 3D.\\ 
+\item Use Approximate Instance-wise Annotation to handle the edge problem in Nodule Annotation.\\
+\end{itemize}
+\end{frame}
+
+\section*{Some problems waiting for discussion}	
+\begin{frame}[fragile]
+\frametitle{Some problems waiting for discussion}
+Here are some problems waiting for discussion.
+\begin{itemize}
+\item We still lack a gpu for model training
+\vspace{.3cm}
+\item We haven't figure out a model to do our transfer learning ideal,and it needs some knowledge and attempts.
+\vspace{.3cm}
+\item We think what we do may not be really helpful to the hospital, and the only contribution is that we can write an article which can be published.
+\end{itemize}
+I hope we can get something valuable in next week.
+\end{frame}
+\bibliography{8.27}
+\bibliographystyle{plain}
+\end{document}

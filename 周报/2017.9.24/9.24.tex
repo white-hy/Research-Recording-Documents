@@ -1,0 +1,79 @@
+\documentclass[8pt]{beamer}
+\usepackage{ctex}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{xcolor} 
+\usepackage{float}
+\usefonttheme[onlymath]{serif}
+\usetheme{Warsaw}
+%\usecolortheme{dolphin}
+\setbeamercovered{transparent}
+%%-------------------------------------------------
+\title{Weekly Report}
+\author{冯浩哲}
+
+\begin{document}
+	\frame{\titlepage}
+		
+	%%-------------------------------------------------
+	
+	\section*{Outline}	
+
+\begin{frame}[fragile]
+\frametitle{Outline}
+\begin{itemize}  
+	
+\item  The tasks I have finished this week
+\vspace{.5cm} 
+\item  Some Suggestions Professor Chen proposes about our project
+\vspace{.5cm}
+\item  Things we want to do next week
+\vspace{.5cm}
+
+\end{itemize}
+\end{frame}
+
+\section*{The main tasks I have finished this week}	
+\begin{frame}[fragile]
+\frametitle{The tasks I have finished this week}
+For the model part,I have finished model building and build the environment for training this week.Now I'm trying to fix some bugs in the code, and we want to see if the "Dropout Strategy" will work.\\
+\vspace{.5cm}
+For the review part, I have finished half of my part, which is intergrated into the whole review.I also have finished article reading about the part left. 
+\vspace{.3cm}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Some Suggestions Professor Chen proposes about our project}
+\indent
+Professor Chen comes to our lab this weekend and has a long talk and discussion with us.Here is a summary of his guidance.
+\begin{itemize}
+\item About our ideals that using dropout to expand the suggest annotation to 3D images\\
+\vspace{.3cm}
+Danny believes it's an ideal worth trying, but the detailed strategy needs more attemptions.At the same time, Danny has observed the pixel-wised label we generate, and suggest that we could try "Fuzzy Segmentation Method" to generate a basic topology structure and use graph search method to fine it\cite{li2006optimal},\cite{6328283}.He also mention the article\cite{Yu2017},\cite{Dou20173D}, which we will read and discuss next week.
+\item About our training strategy "Quasi-Transfer Learning Method"\\
+\vspace{.3cm}
+Our main ideal is to use the parameters trained in a detector net, and add the deconvolution part after it. Danny believes the main point is to identify which layers we can use in our segment net. To figure it out, we need to do many attemptions such as add or remove a layer , input some data with noise, and then we can get some information from the feedback and find out the optimal stage. 
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{ Things we want to do next week}
+\vspace{.3cm}
+\begin{itemize}
+	\item Finish my review part.\\
+	\vspace{.3cm}
+	I plan to finish my part left of review before Wednesday next week,and the left part is the traditional method in nodule segment and diagnosis. 
+	\vspace{.3cm}
+	\item Finish reading the 4 arcticles Professor chen recommended and write a conclusion.
+	\vspace{.3cm}
+	\item Begin our model training as soon as possible, and try some attemptions mentioned above.
+
+\end{itemize}
+\end{frame}
+
+
+\bibliography{9-24}
+\bibliographystyle{plain}
+\end{document}

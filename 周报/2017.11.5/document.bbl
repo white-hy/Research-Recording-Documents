@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{girshick2014rich}
+Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 580--587, 2014.
+
+\bibitem{Felzenszwalb2004Efficient}
+Pedro~F. Felzenszwalb and Daniel~P. Huttenlocher.
+\newblock Efficient graph-based image segmentation.
+\newblock {\em International Journal of Computer Vision}, 59(2):167--181, 2004.
+
+\bibitem{girshick2015fast}
+Ross Girshick.
+\newblock Fast r-cnn.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 1440--1448, 2015.
+
+\bibitem{ren2015faster}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  91--99, 2015.
+
+\bibitem{DBLP:journals/corr/abs-1708-02002}
+Tsung{-}Yi Lin, Priya Goyal, Ross~B. Girshick, Kaiming He, and Piotr
+  Doll{\'{a}}r.
+\newblock Focal loss for dense object detection.
+\newblock {\em CoRR}, abs/1708.02002, 2017.
+
+\bibitem{he2017mask}
+Kaiming He, Georgia Gkioxari, Piotr Doll{\'a}r, and Ross Girshick.
+\newblock Mask r-cnn.
+\newblock {\em arXiv preprint arXiv:1703.06870}, 2017.
+
+\bibitem{DBLP:journals/corr/QiSMG16}
+Charles~Ruizhongtai Qi, Hao Su, Kaichun Mo, and Leonidas~J. Guibas.
+\newblock Pointnet: Deep learning on point sets for 3d classification and
+  segmentation.
+\newblock {\em CoRR}, abs/1612.00593, 2016.
+
+\end{thebibliography}

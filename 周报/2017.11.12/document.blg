@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: document.aux
+The style file: unsrt.bst
+Database file #1: Report.bib
+Warning--empty journal in Dong
+Warning--empty year in Dong
+You've used 1 entry,
+            1791 wiz_defined-function locations,
+            450 strings with 3576 characters,
+and the built_in function-call counts, 266 in all, are:
+= -- 24
+> -- 4
+< -- 1
++ -- 2
+- -- 1
+* -- 15
+:= -- 42
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 14
+empty$ -- 25
+format.name$ -- 1
+if$ -- 58
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 1
+pop$ -- 6
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 9
+stack$ -- 0
+substring$ -- 19
+swap$ -- 5
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 4
+width$ -- 2
+write$ -- 11
+(There were 2 warnings)

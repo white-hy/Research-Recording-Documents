@@ -1,0 +1,34 @@
+\documentclass[twocolumn]{article}
+%\usepackage[UTF8]{ctex}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphics}
+\usepackage{float}
+\title{Weekly Report}
+\author{Haozhe Feng}
+\begin{document}
+	\maketitle{}
+\section{The tasks I have finished this week}
+I found myself misunderstand the relationship between object detection and semantic segmentation, and it had been causing problems in my research. So I systematically study the knowledge bases and research frontiers of object detection this week.\\
+
+I mainly focus on 5 important papers and list their key points as follow:
+\begin{itemize}
+\item Literature\cite{girshick2014rich} proposes the framework of object detection with deep learning method(RCNN), and uses selective search technique\cite{Felzenszwalb2004Efficient} to reduce the number of RoI.
+\item Literature\cite{girshick2015fast} improves the classification part of RCNN, optimizes the error back propagation way of the framework and proposes a calculation method to project the RoI on the feature map.This improved framework is called Fast R-CNN
+\item Literature\cite{ren2015faster} proposes a Region Proposal Net structure to replace the selective  method.This framework is the most popular framework now and is called Faster R-CNN
+\item Literature\cite{DBLP:journals/corr/abs-1708-02002}proposes an important change in loss function and completely solve the problem of imbalance in positive and negative samples.
+\item Literature\cite{he2017mask} proposes a new structure based on Faster R-CNN and mainly focuses on the frontier problem:Instance Segmentation. This framework is called Mask R-CNN.
+
+\end{itemize}
+
+\section{The tasks I plan to do next week}
+From the papers mentioned above, I find some relationship with our nodule detection task:
+\begin{itemize}
+\item Our nodule detection task is actually an instance segmentation task, and semantic segmentation structure such as liver segmentation isn't suitable for our task.I will specifically study the Mask R-CNN structure and do some practice next week.
+\item The research of 3D object detection and instance segmentation task in nature image field has little progress due to the immaturity of 3D photography technology. Literature\cite{DBLP:journals/corr/QiSMG16} proposes a network to process the point set 3D data.However,it is common on medical image analysis. So if we can propose a 3D structure of Faster R-CNN or Mask R-CNN in medical image field, it will be valuable.
+\end{itemize}
+I will practice these ideals next week.
+\bibliography{Report}
+\bibliographystyle{unsrt}
+\end{document}

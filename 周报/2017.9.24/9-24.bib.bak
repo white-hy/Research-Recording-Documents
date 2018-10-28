@@ -1,0 +1,43 @@
+% Encoding: UTF-8
+
+@InBook{Yu2017,
+  pages     = {287--295},
+  title     = {Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets},
+  publisher = {Springer International Publishing},
+  year      = {2017},
+  author    = {Yu, Lequan and Cheng, Jie-Zhi and Dou, Qi and Yang, Xin and Chen, Hao and Qin, Jing and Heng, Pheng-Ann},
+  editor    = {Descoteaux, Maxime and Maier-Hein, Lena and Franz, Alfred and Jannin, Pierre and Collins, D. Louis and Duchesne, Simon},
+  address   = {Cham},
+  isbn      = {978-3-319-66185-8},
+  abstract  = {Automatic and accurate whole-heart and great vessel segmentation from 3D cardiac magnetic resonance (MR) images plays an important role in the computer-assisted diagnosis and treatment of cardiovascular disease. However, this task is very challenging due to ambiguous cardiac borders and large anatomical variations among different subjects. In this paper, we propose a novel densely-connected volumetric convolutional neural network, referred as DenseVoxNet, to automatically segment the cardiac and vascular structures from 3D cardiac MR images. The DenseVoxNet adopts the 3D fully convolutional architecture for effective volume-to-volume prediction. From the learning perspective, our DenseVoxNet has three compelling advantages. First, it preserves the maximum information flow between layers by a densely-connected mechanism and hence eases the network training. Second, it avoids learning redundant feature maps by encouraging feature reuse and hence requires fewer parameters to achieve high performance, which is essential for medical applications with limited training data. Third, we add auxiliary side paths to strengthen the gradient propagation and stabilize the learning process. We demonstrate the effectiveness of DenseVoxNet by comparing it with the state-of-the-art approaches from HVSMR 2016 challenge in conjunction with MICCAI, and our network achieves the best dice coefficient. We also show that our network can achieve better performance than other 3D ConvNets but with fewer parameters.},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention − MICCAI 2017: 20th International Conference, Quebec City, QC, Canada, September 11-13, 2017, Proceedings, Part II},
+  doi       = {10.1007/978-3-319-66185-8_33},
+  url       = {https://doi.org/10.1007/978-3-319-66185-8_33},
+}
+
+@Article{6328283,
+  author   = {X. Liu and D. Z. Chen and M. H. Tawhai and X. Wu and E. A. Hoffman and M. Sonka},
+  title    = {Optimal Graph Search Based Segmentation of Airway Tree Double Surfaces Across Bifurcations},
+  journal  = {IEEE Transactions on Medical Imaging},
+  year     = {2013},
+  volume   = {32},
+  number   = {3},
+  pages    = {493-510},
+  month    = {March},
+  issn     = {0278-0062},
+  doi      = {10.1109/TMI.2012.2223760},
+  keywords = {bifurcation;computerised tomography;diagnostic radiography;diseases;graphs;image sampling;image segmentation;lung;medical image processing;phantoms;LOGISMOS;airway tree double surfaces;asthma;bifurcations;bronchial tree structure;carina-noncarina regions;chronic obstructive pulmonary diseases;computerised tomography-scanned double-wall physical phantom;image sampling;input 3D image segmentation;lung diseases;mean signed error;optimal graph search based segmentation;phenotypes;tree topology;volumetric X-ray computed tomography data sets;voxel columns;Bifurcation;Computed tomography;Image segmentation;Lungs;Search problems;Surface treatment;Topology;Airway trees;bifurcations;complex topology;graph search;image segmentation;multiple surfaces;Adult;Aged;Algorithms;Bronchi;Female;Humans;Image Processing, Computer-Assisted;Male;Middle Aged;Phantoms, Imaging;Reproducibility of Results;Tomography, X-Ray Computed},
+}
+
+@Article{li2006optimal,
+  author    = {Li, Kang and Wu, Xiaodong and Chen, Danny Z and Sonka, Milan},
+  title     = {Optimal surface segmentation in volumetric images-a graph-theoretic approach},
+  journal   = {IEEE transactions on pattern analysis and machine intelligence},
+  year      = {2006},
+  volume    = {28},
+  number    = {1},
+  pages     = {119--134},
+  publisher = {IEEE},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
